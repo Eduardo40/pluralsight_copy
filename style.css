@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.container {
+  background: #181818;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+#left-side {
+  flex-grow: 6;
+}
+
+.svg-div {
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form,
+.form-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-c {
+  margin: 8px 0;
+}
+
+input[type="text"] {
+  background: none;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+input[type="submit"] {
+  background: #f96816;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.options-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.links a {
+  padding: 4px 0;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #f96816;
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr-1,
+.hr-2 {
+  width: 40%;
+  padding: 2px;
+  margin: 15px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-div a {
+  transition: all 0.3s;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 7px 0px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-div a:hover {
+  border-color: #f96816;
+  color: #f96816;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  height: 22%;
+  justify-content: flex-end;
+}
+
+.footer .links-2 a {
+  color: #f96816;
+}
+
+#right-side {
+  background-image: url(https://app.pluralsight.com/id/content/img/login-bg.jpg);
+  flex-grow: 6;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motivation-text {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.motivation-text h2 {
+  font-weight: 300;
+}
+
+.motivation-text a {
+  transition: all 0.3s;
+  padding: 7px;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  border: 1px solid;
+  color: white;
+  text-decoration: none;
+  background: none;
+}
+
+.motivation-text a:hover {
+  text-decoration: underline;
+  color: #f96816;
+}
+
+@media (max-width: 768px) {
+  body,
+  .container {
+    height: 100vh;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  #right-side {
+    display: none;
+  }
+
+  .btn-div a {
+    padding: 7px 10px;
+  }
+
+  .svg-div {
+    padding: 20px 0;
+  }
+
+  .svg {
+    width: 75%;
+    height: 1%;
+  }
+
+  .login-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer small {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  body,
+  .container {
+    height: 100%;
+  }
+}
